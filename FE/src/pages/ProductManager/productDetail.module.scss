@@ -1,0 +1,168 @@
+.infor {
+    display: flex;
+    box-sizing: border-box;
+    & > form {
+        width: 50%;
+    }
+    & > div {
+        width: 50%;
+    }
+
+    .group {
+        display: flex;
+        margin-bottom: 1.2rem;
+        flex-direction: column;
+        overflow-wrap: break-word;
+        .label {
+            margin-bottom: 0.4rem;
+            font-size: 1.8rem;
+        }
+        .text {
+            margin: 0;
+            padding: 0.55rem 1.2rem;
+            color: #666;
+            font-size: 1.6rem;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        .textarea {
+            resize: none;
+            outline: none;
+            padding: 0.6rem 1.2rem;
+            font-size: 1.6rem;
+            border-color: #ccc;
+            font-family: "Nunito";
+            border-radius: 0.4rem;
+        }
+        .colorList {
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+            .colorItem {
+                margin-right: 3rem;
+                position: relative;
+                > span {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    background-position: center;
+                    box-shadow: 1px 2px 4px rgb(0 0 0 / 20%),
+                        1px 1px 4px rgb(0 0 0 / 22%);
+                }
+                .delColor {
+                    position: absolute;
+                    top: -0.8rem;
+                    right: -1rem;
+                    font-size: 1.4rem;
+                    color: #d32f2f;
+                    text-shadow: #fff;
+                    border: none;
+                    display: none;
+                    animation: rotate 1s ease-in-out;
+                }
+                &:hover .delColor {
+                    display: inline-block;
+                }
+            }
+        }
+        .sizeList {
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+            .sizeItem {
+                margin-right: 3rem;
+                position: relative;
+                > button {
+                    color: #999;
+                    width: 5rem;
+                    height: 5rem;
+                    font-size: 2rem;
+                    cursor: pointer;
+                    align-items: center;
+                    display: inline-flex;
+                    border-radius: 0.4rem;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    border: 1px solid #ccc;
+                    background-color: #fff;
+                }
+                &.active {
+                    > button {
+                        color: #495057;
+                        border: 2px solid #333;
+                        box-shadow: 1px 2px 4px rgb(0 0 0 / 20%),
+                            1px 1px 4px rgb(0 0 0 / 22%);
+                    }
+                }
+            }
+        }
+        .imgList {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            .imgItem {
+                position: relative;
+                margin-right: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 0.2rem;
+                box-shadow: 1px 2px 4px rgb(0 0 0 / 20%),
+                    1px 1px 4px rgb(0 0 0 / 22%);
+                img {
+                    width: 10rem;
+                    height: 10rem;
+                    display: inline-block;
+                    box-sizing: border-box;
+                }
+                .delProductImg {
+                    position: absolute;
+                    top: -0.8rem;
+                    right: -1rem;
+                    font-size: 1.4rem;
+                    color: #d32f2f;
+                    text-shadow: #fff;
+                    border: none;
+                    display: none;
+                    animation: rotate 1s ease-in-out;
+                }
+                &:hover .delProductImg {
+                    display: inline-block;
+                }
+            }
+        }
+        .addContainer {
+            .addBtn {
+                cursor: pointer;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                background-color: #fff;
+                border: 2px solid #666;
+                svg {
+                    font-size: 2rem;
+                    color: #666;
+                }
+                animation: jump 1s ease-in-out infinite alternate;
+            }
+        }
+    }
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0.4rem);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    0% {
+        transform: rotateY(180deg);
+    }
+}

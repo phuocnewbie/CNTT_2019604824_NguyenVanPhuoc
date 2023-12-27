@@ -1,0 +1,38 @@
+.infor {
+    box-sizing: border-box;
+
+    .container {
+        border-radius: 0.4rem;
+        background-color: #fff;
+    }
+
+    .group {
+        display: flex;
+        margin-bottom: 1.2rem;
+        flex-direction: column;
+        overflow-wrap: break-word;
+        .label {
+            margin-bottom: 0.4rem;
+            font-size: 1.5rem;
+            color: black;
+            font-weight: 500;
+        }
+        .text {
+            margin: 0;
+            color: #666;
+            font-size: 1.7rem;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+    .orderDetailColor {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        background-position: center;
+        box-shadow: #333f48 0 0 0 2px;
+    }
+}

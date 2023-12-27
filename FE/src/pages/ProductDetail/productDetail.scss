@@ -1,0 +1,127 @@
+@import "./swiper.scss";
+
+.product-Info {
+    .product-Name {
+        color: #333;
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+    }
+    .product-avgRating {
+        display: flex;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #666;
+        > span {
+            margin-right: 1.2rem;
+        }
+    }
+    .product-Price {
+        color: #495057;
+        font-weight: 700;
+        font-size: 2.8rem;
+        margin: 2rem 0;
+        .new-price {
+            color: "#333";
+        }
+        .old-price {
+            font-size: 2rem;
+            color: #b2b2b2;
+            margin-right: 1rem;
+            text-decoration: line-through;
+        }
+    }
+    .product-Quantity {
+        color: #495057;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+        & > span {
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+    }
+}
+.product-Desc {
+    margin: 4rem 0;
+    .title {
+        font-size: 2.4rem;
+        color: #495057;
+    }
+    .detail {
+        font-size: 1.6rem;
+        color: #666;
+    }
+}
+.product-Related,
+.product-Ratings {
+    margin: 4rem 0;
+    .title {
+        font-size: 2.4rem;
+        color: #495057;
+    }
+}
+//
+.loader {
+    width: 60%;
+}
+.scanner span {
+    display: block;
+    color: transparent;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.scanner span::before {
+    content: "Đang thêm...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    font-size: 1.6rem;
+    font-family: "Nunito";
+    border-right: 4px solid #fff;
+    overflow: hidden;
+    color: #fff;
+    animation: load91371 2s linear infinite;
+}
+
+@keyframes load91371 {
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80%,
+    90%,
+    100% {
+        border-right-color: transparent;
+    }
+
+    11%,
+    21%,
+    31%,
+    41%,
+    51%,
+    61%,
+    71%,
+    81%,
+    91% {
+        border-right-color: #fff;
+    }
+
+    60%,
+    80% {
+        width: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+.tab {
+    .tab-icon {
+        font-size: 1.8rem;
+        color: #999;
+    }
+    .tab-text > span {
+        font-size: 1.8rem !important;
+        font-family: "Nunito";
+        color: #999;
+    }
+    &.currentTab {
+        .tab-icon {
+            color: #000;
+        }
+        .tab-text > span {
+            color: #000;
+        }
+    }
+}

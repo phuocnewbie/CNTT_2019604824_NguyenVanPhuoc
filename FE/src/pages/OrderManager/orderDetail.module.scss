@@ -1,0 +1,45 @@
+.infor {
+    display: flex;
+    box-sizing: border-box;
+    .container {
+        width: 50%;
+        padding: 2rem;
+        min-height: 40rem;
+        border-radius: 0.4rem;
+        background-color: #fff;
+    }
+    & > div:nth-of-type(1) {
+        margin-right: 2rem;
+    }
+    & > div:nth-of-type(2) {
+        margin-left: 2rem;
+    }
+
+    .group {
+        display: flex;
+        margin-bottom: 1.2rem;
+        flex-direction: column;
+        overflow-wrap: break-word;
+        .label {
+            margin-bottom: 0.4rem;
+            font-size: 1.8rem;
+        }
+        .text {
+            margin: 0;
+            color: #666;
+            font-size: 1.6rem;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+    .orderDetailColor {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        background-position: center;
+        box-shadow: #333f48 0 0 0 2px;
+    }
+}

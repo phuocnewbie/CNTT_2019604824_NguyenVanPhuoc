@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Noto+Sans+Display:wght@300;400;500;700&family=Nunito:wght@300;400;500;700&display=swap");
+.textColor {
+    color: #495057 !important;
+}
+.whiteTextColor {
+    color: #fff !important;
+}
+.grayTextColor {
+    color: #b2b2b2 !important;
+}
+.useFont-Noto {
+    font-family: "Noto Sans Display", sans-serif !important;
+}
+.useFont-Baloo {
+    font-family: "Baloo 2", cursive !important;
+}
+.useFont-Nunito {
+    font-family: "Nunito", sans-serif !important;
+}
+.linkNoneUnderline {
+    text-decoration: none;
+}
+.linkUnderlineHover {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+img {
+    vertical-align: middle;
+}
+.hiddenScrollBar::-webkit-scrollbar {
+    display: none;
+}
+.grid-wide {
+    width: 1200px;
+    box-sizing: border-box;
+    margin: auto;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .grid-wide {
+        width: 644px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .grid-wide {
+        width: 964px;
+    }
+}

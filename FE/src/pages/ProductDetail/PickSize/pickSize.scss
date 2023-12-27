@@ -1,0 +1,30 @@
+.product-Size {
+    font-size: 1.8rem;
+    color: #495057;
+    margin-bottom: 2rem;
+    & > span {
+        display: block;
+        margin-bottom: 0.8rem;
+    }
+    .size-item {
+        color: #666;
+        height: 4rem;
+        width: 4.2rem;
+        cursor: pointer;
+        font-size: 1.6rem;
+        margin-right: 3rem;
+        border-radius: 0.2rem;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        &.selected {
+            color: #495057;
+            border-width: 2px;
+            box-sizing: border-box;
+            border-color: #495057;
+        }
+    }
+    .error-message {
+        color: #d32f2f;
+        font-size: 1.4rem;
+    }
+}
